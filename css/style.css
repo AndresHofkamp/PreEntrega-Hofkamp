@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* COMIENZO NAVBAR */
+.comun{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+.logonav{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+nav{
+    top: 30px
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.navbotom{
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    color: #6B6B6B;
+    padding: 0px 100px 0px 100px;
+}
+/* FIN NAVBAR */
+
+
+
+
+
+/* NOSOTROS RESPONSIVE */
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.gridContainer {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    grid-template-areas:
+        "header header"
+        "navIzq navDer"
+        "parrafo parrafo"
+        "img img"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px auto 1fr 100px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+div.navIzq {
+    grid-area: navIzq;
+}
+div.navDer {
+    grid-area: navDer;
+}
+
+.navIzq ul,
+.navDer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+}
+.navgrid{
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    color: #6B6B6B;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    margin: auto;
+    width: 800px;
+    padding: 30px 10px;
+    font-family: 'EB Garamond', serif; 
+    display: flex;
+    justify-content: center;
+}
+
+.imgParrafo {
+    grid-area: img;
+}
+
+.footnos {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.ubicacion{
+    width: 400px;
+}
+.ubicacion, .mail{
+    padding: 120px 0px 0px 0px;
+}
+    /* vista desktop */
+@media only screen and (min-width: 768px) {
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "navIzq navIzq header header navDer navDer"
+            "parrafo parrafo parrafo img img img"
+            "footer footer footer footer footer footer";
+        grid-template-columns: repeat(6, 16.6%);
+        grid-template-rows: 100px auto 200px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    li {
+        position: relative;
+        top: 20px;
+    }
+}
+/* FIN NOSOTROS RESPONSIVE */
+
+
+
+
+
+
+
+.inicio{
+    background-color: #6B6B6B;
+    background-image: url(https://domainestdiego.com/wp-content/uploads/2018/07/slide-1-home-terraza-domaine.jpg);
+    width: 100%;
+    height: 600px;
+}
+.inicio>h1{
+    color:white;
+    padding: 50px 0px 0px 0px;
+}
+.inicio>h2{
+    color:white;
+    padding: 5px 1px 1px 30px;
+}
+.textoinicio{
+    margin: auto;
+    width: 700px;
+    padding: 30px 10px;
+    font-family: 'Cinzel', serif; 
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1{
+    font-family: 'Cinzel', serif; 
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    font-family: 'EB Garamond', serif;
+    color: #1e1e1e;
+    margin: auto;
+    width: 400px;
+}
+.botonhome{
+    color: #0E4500;
+    border: #0E4500 2px solid;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.resumen_productos{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.resumen_productos>.resumen_vinos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10px 10px 10px;
+}
+.resumen_productos>.resumen_aceites{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10px 10px 10px;
+}
+.resumen_productos>.resumen_vinos>a{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+}
+.resumen_productos>.resumen_aceites>a{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+}
+.resumen_historia>h1{
+    padding: 50px 10px 10px 10px;
+}
+.resumen_historia>h3{
+    padding: 10px 10px 10px 10px;
+}
+.resumen_historia>a{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+
+
+/* COMIENZO VINOS Y ACEITES */
+.mainverde>h1{
+    padding: 20px 10px 10px 10px;
+    background-color:#0E4500;
+    color: white;
+}
+
+        /* PRODUCTO */
+.producto{
+    width: 300px;
+    height: 300px;
+    background-color: #6B6B6B;
+}
+
+        /* VINOS */
+.vinos{
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px 0px
+}
+
+        /* ESPUMANTES */
+.espumantes{
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px 0px
+}
+
+        /* ACEITES */
+.aceites{
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px 0px
+}
+
+/* FIN VINOS Y ACEITES */
+
+
+
+/* COMIENXO CONTACTO */
+.conteactanos{
+    padding: 20px 0px;
+    width: 90%;
+    margin: auto;
+}
+h5{
+    font-family: 'EB Garamond', serif;
+    color: #1e1e1e;
+    width: 400px; 
+}
+.ductext{
+    width: 200px;
+    height: 20px;
+    border: #6B6B6B 2px solid;
+}
+.conteactanos>.botonenviar>a{
+    color: #0E4500;
+    border: #0E4500 2px solid;
+    padding: 5px;
+    margin: auto;
+    text-decoration: none;
+}
+.conteactanos>.botonenviar{
+    padding: 20px 0px 0px 0px;
+}
+/* FIN CONTACTO */
+
+
+
+
+/* COMIENZO FOOTER */
+footer{
+    width: 100%;
+    padding: 40px 0px;
+}
+footer>div{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+footer>div>img{
+    margin: auto;
+}
+.RRSS{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    color: #6B6B6B;
+}
+.iconoRRSS{
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    color: black;
+    display: flex;
+    flex-direction:block;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100%;
+}
+/* FIN FOOTER */
